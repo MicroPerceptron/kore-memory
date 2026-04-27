@@ -1,0 +1,9 @@
+/Users/snowcheetos/Documents/MicroPerceptron/kore-memory/target/riscv64gc-unknown-none-elf/debug/deps/memory_addr-c3d4ec7566b1937e.d: /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/lib.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/addr.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/iter.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/range.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/../README.md
+
+/Users/snowcheetos/Documents/MicroPerceptron/kore-memory/target/riscv64gc-unknown-none-elf/debug/deps/libmemory_addr-c3d4ec7566b1937e.rmeta: /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/lib.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/addr.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/iter.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/range.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/../README.md
+
+/Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/lib.rs:
+/Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/addr.rs:
+/Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/iter.rs:
+/Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/range.rs:
+/Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memory_addr-0.4.1/src/../README.md:

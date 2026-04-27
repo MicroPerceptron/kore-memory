@@ -1,0 +1,9 @@
+/Users/snowcheetos/Documents/MicroPerceptron/kore-memory/target/aarch64-unknown-none/debug/deps/tock_registers-d66309f363443c9d.d: /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/lib.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/fields.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/interfaces.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/macros.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/local_register.rs
+
+/Users/snowcheetos/Documents/MicroPerceptron/kore-memory/target/aarch64-unknown-none/debug/deps/libtock_registers-d66309f363443c9d.rmeta: /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/lib.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/fields.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/interfaces.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/macros.rs /Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/local_register.rs
+
+/Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/lib.rs:
+/Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/fields.rs:
+/Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/interfaces.rs:
+/Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/macros.rs:
+/Users/snowcheetos/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tock-registers-0.9.0/src/local_register.rs:
