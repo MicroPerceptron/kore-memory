@@ -87,7 +87,7 @@ dependencies = [
 
 [[package]]
 name = "kore-memory"
-version = "0.4.0"
+version = "0.4.1"
 dependencies = [
  "aarch64-cpu 11.2.0",
  "aarch64-cpu-ext",
