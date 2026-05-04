@@ -22,11 +22,10 @@
 //! Consumers must install the PAT value on every CPU before activating
 //! [`crate::CachePolicy::WriteCombine`] mappings.
 
-mod activation;
 mod entry;
 mod tlb;
+mod vas;
 
-pub use activation::{X86Cr3Mode, X86PagingActivation, X86PagingControls, X86PagingToken};
 pub use entry::{
     X86_PAT_MSR, X86_PAT_MSR_VALUE, X86_PAT_TYPE_UC, X86_PAT_TYPE_UC_MINUS, X86_PAT_TYPE_WB,
     X86_PAT_TYPE_WC, X86_PAT_TYPE_WP, X86_PAT_TYPE_WT, X86_PAT_UNCACHED_INDEX,
@@ -34,6 +33,7 @@ pub use entry::{
     X86Meta48, X86Meta57, X86Pte, install_x86_pat,
 };
 pub use tlb::{X86InvlpgbTlb, X86PcidTlb, X86Tlb};
+pub use vas::{X86Cr3Mode, X86PagingActivation, X86PagingControls, X86PagingToken};
 
 /// x86_64 4-level CPU page table: 48-bit canonical virtual addresses.
 pub type X86PageTable48<Alloc> = crate::PageTableWalker<X86Meta48, X86Pte, Alloc>;

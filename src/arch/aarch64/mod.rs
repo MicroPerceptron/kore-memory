@@ -25,13 +25,10 @@
 //! The active TCR_EL1 granule, address-size, and IPS/DS settings must match
 //! the selected `A64PageTable{4K,16K,64K}{48,52}` type.
 
-mod activation;
 mod entry;
 mod tlb;
+mod vas;
 
-pub use activation::{
-    A64PagingActivation, A64PagingControls, A64PagingToken, A64Ttbr, A64TtbrConfig,
-};
 pub use entry::{
     A64_MAIR_ATTR_DEVICE_NGNRNE, A64_MAIR_ATTR_NORMAL_NC, A64_MAIR_ATTR_WRITEBACK,
     A64_MAIR_ATTR_WRITETHROUGH, A64_MAIR_DEVICE_INDEX, A64_MAIR_EL1_VALUE,
@@ -40,6 +37,7 @@ pub use entry::{
     A64Pte4K52, A64Pte16K48, A64Pte16K52, A64Pte64K48, A64Pte64K52, install_a64_mair_el1,
 };
 pub use tlb::A64Tlb;
+pub use vas::{A64PagingActivation, A64PagingControls, A64PagingToken, A64Ttbr, A64TtbrConfig};
 
 /// AArch64 4 KiB granule page table with 48-bit VA/OA.
 pub type A64PageTable4K48<Alloc> = crate::PageTableWalker<A64Meta4K48, A64Pte4K48, Alloc>;

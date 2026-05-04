@@ -21,16 +21,16 @@
 //! `WriteThrough` has no direct Svpbmt representation and is clamped to the
 //! default/PMA policy.
 
-mod activation;
 mod entry;
 mod tlb;
+mod vas;
 
-pub use activation::{Rv64SatpActivation, Rv64SatpControls, Rv64SatpToken};
 pub use entry::{
     RV64_PBMT_IO, RV64_PBMT_MASK, RV64_PBMT_NC, RV64_PBMT_PMA, Rv64Flags, Rv64Meta39, Rv64Meta48,
     Rv64Meta57, Rv64Pte, Rv64SvpbmtPte,
 };
 pub use tlb::Rv64Tlb;
+pub use vas::{Rv64SatpActivation, Rv64SatpControls, Rv64SatpToken};
 
 /// RISC-V Sv39 page table.
 pub type Rv64PageTable39<Alloc> = crate::PageTableWalker<Rv64Meta39, Rv64Pte, Alloc>;

@@ -1,5 +1,6 @@
 use core::ptr;
 
+use heapless::Vec;
 use memory_addr::{AddrRange, MemoryAddr, PhysAddr, PhysAddrRange, VirtAddr};
 
 use crate::{PageSize, PageTableEntry, PagingError, PagingResult};
@@ -158,7 +159,7 @@ where
     }
 
     #[inline(always)]
-    fn modify_ux_volatile<T: Copy>(
+    fn update_ux_volatile<T: Copy>(
         &mut self,
         offset: usize,
         f: impl FnOnce(T) -> T,
@@ -180,12 +181,12 @@ where
     }
 
     #[inline(always)]
-    pub fn modify_vo8(
+    pub fn update_vo8(
         &mut self,
         offset: usize,
         f: impl FnOnce(u8) -> u8,
     ) -> Result<u8, PagingError> {
-        self.modify_ux_volatile(offset, f)
+        self.update_ux_volatile(offset, f)
     }
 
     #[inline(always)]
@@ -199,12 +200,12 @@ where
     }
 
     #[inline(always)]
-    pub fn modify_vo16(
+    pub fn update_vo16(
         &mut self,
         offset: usize,
         f: impl FnOnce(u16) -> u16,
     ) -> Result<u16, PagingError> {
-        self.modify_ux_volatile(offset, f)
+        self.update_ux_volatile(offset, f)
     }
 
     #[inline(always)]
@@ -218,12 +219,12 @@ where
     }
 
     #[inline(always)]
-    pub fn modify_vo32(
+    pub fn update_vo32(
         &mut self,
         offset: usize,
         f: impl FnOnce(u32) -> u32,
     ) -> Result<u32, PagingError> {
-        self.modify_ux_volatile(offset, f)
+        self.update_ux_volatile(offset, f)
     }
 
     #[inline(always)]
@@ -237,12 +238,12 @@ where
     }
 
     #[inline(always)]
-    pub fn modify_vo64(
+    pub fn update_vo64(
         &mut self,
         offset: usize,
         f: impl FnOnce(u64) -> u64,
     ) -> Result<u64, PagingError> {
-        self.modify_ux_volatile(offset, f)
+        self.update_ux_volatile(offset, f)
     }
 
     #[inline(always)]
@@ -256,12 +257,12 @@ where
     }
 
     #[inline(always)]
-    pub fn modify_vo128(
+    pub fn update_vo128(
         &mut self,
         offset: usize,
         f: impl FnOnce(u128) -> u128,
     ) -> Result<u128, PagingError> {
-        self.modify_ux_volatile(offset, f)
+        self.update_ux_volatile(offset, f)
     }
 }
 
@@ -342,7 +343,7 @@ impl<'a, const N: usize> IntoMapBacking<'a> for &'a [PhysAddrRange; N] {
     }
 }
 
-impl<'a, const N: usize> IntoMapBacking<'a> for &'a heapless::Vec<PhysAddrRange, N> {
+impl<'a, const N: usize> IntoMapBacking<'a> for &'a Vec<PhysAddrRange, N> {
     #[inline]
     fn into_map_backing(self, _virtual_size: usize) -> PagingResult<MapBacking<'a>> {
         Ok(MapBacking::Scattered(self.as_slice()))
